@@ -1,0 +1,39 @@
+/*============================================================================================*/
+/* Your custom styles below */
+/*============================================================================================*/
+
+
+/* image on the left hero */
+.col-xl-4.col-lg-4.content-left {
+    background-image: url('../img/pozadina.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+button.backward,
+button.forward,
+button.submit {
+    background:#00c4ff;
+}
+
+input[type=file]::-webkit-file-upload-button, input[type=file].invalid::-webkit-file-upload-button, input[type=file].valid::-webkit-file-upload-button {
+    background-color: #00c4ff ;
+}
+
+input[type=file]::-webkit-file-upload-button, input[type=file].invalid::-webkit-file-upload-button, input[type=file].valid::-webkit-file-upload-button:hover {
+    cursor: pointer;
+}
+
+.fab {
+    margin: 0 8px;
+}
+
+/* optgroup { 
+    font-size:18px; 
+    font-weight: 900!important;
+} */
+
+.bigger-option {
+    font-size: 16px;
+}
+

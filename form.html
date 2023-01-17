@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Semos Education | Job Application Form Resume Upload">
+	<meta name="author" content="Ansonika">
+	<title>Semos Education | Job Application Form</title>
+
+	<!-- Favicons-->
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon.png">
+	<link rel="android-chrome" type="image/x-icon" sizes="512x512" href="img/android-chrome-512x512.png">
+	<link rel="android-chrome" type="image/x-icon" sizes="192x192" href="img/android-chrome-192x192.png">
+
+	<!-- GOOGLE WEB FONT -->
+	<link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600" rel="stylesheet">
+
+	<!-- BASE CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/menu.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/vendors.css" rel="stylesheet">
+
+	<!-- YOUR CUSTOM CSS -->
+	<link href="css/custom.css" rel="stylesheet">
+
+	<!-- MODERNIZR MENU -->
+	<script src="js/modernizr.js"></script>
+
+	<!-- FONTAWESOME -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+		integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+	<div id="preloader">
+		<div data-loader="circle-side"></div>
+	</div><!-- /Preload -->
+
+	<div id="loader_form">
+		<div data-loader="circle-side-2"></div>
+	</div><!-- /loader_form -->
+
+	<!-- <nav>
+		<ul class="cd-primary-nav">
+			<li><a href="index.html" class="animated_link">Version 1</a></li>
+			<li><a href="index-2.html" class="animated_link">Version 2</a></li>
+			<li><a href="index-3.html" class="animated_link">Version 3</a></li>
+			<li><a href="index-4.html" class="animated_link">File Attachment demo</a></li>
+			<li><a href="about.html" class="animated_link">About Us</a></li>
+			<li><a href="contacts.html" class="animated_link">Contact Us</a></li>
+			<li><a href="#0" class="animated_link">Purchase Template</a></li>
+		</ul>
+	</nav> -->
+	<!-- /menu -->
+
+	<div class="container-fluid">
+		<div class="row row-height">
+			<div class="col-xl-4 col-lg-4 content-left">
+				<div class="content-left-wrapper">
+					<a href="https://semosedu.com.mk/" target="_blank" id="logo"><img src="img/logo_semosedu.png" alt=""
+							height="45"></a>
+					<div id="social">
+						<ul>
+							<li><a href="https://www.facebook.com/semos.edu/"><i class="fab fa-facebook-f"></i></a></li>
+							<li><a href="https://www.instagram.com/semos_education/"><i
+										class="fab fa-instagram"></i></a></li>
+							<li><a href="https://twitter.com/EducationSemos"><i class="fab fa-twitter"></i></a></li>
+							<li><a href="https://www.linkedin.com/company/5043975"><i class="fab fa-linkedin"></i></a>
+							</li>
+							<li><a href="https://www.youtube.com/channel/UC-LMwXoOT1xdzjb_dKzpiLw"><i
+										class="fab fa-youtube"></i></a></li>
+						</ul>
+					</div>
+					<!-- /social -->
+					<div>
+						<figure><img src="img/logo-Semos.png" alt="" class="img-fluid" width="270" height="270">
+						</figure>
+						<h2>We are Hiring</h2>
+						<p>individuals who are experts in their field. Are <strong>you</strong> one of them? Complete
+							this form and become part of our team.</p>
+						<!-- <a href="#0" class="btn_1 rounded yellow">Purchase this template</a> -->
+						<!-- <a href="#start" class="btn_1 rounded mobile_btn yellow">Start Now!</a> -->
+					</div>
+					<div class="copy">© 2022 Semos Education</div>
+				</div>
+				<!-- /content-left-wrapper -->
+			</div>
+			<!-- /content-left -->
+			<div class="col-xl-8 col-lg-8 content-right" id="start">
+				<div id="wizard_container">
+					<div id="top-wizard">
+						<span id="location"></span>
+						<div id="progressbar"></div>
+					</div>
+					<!-- <form method="post" action="php/create-reservation.php" enctype="multipart/form-data"> -->
+					<!-- /top-wizard -->
+					<form id="wrapped" method="post" enctype="multipart/form-data">
+						<input id="website" name="website" type="text" value="">
+						<!-- Leave for security protection, read docs for details -->
+						<div id="middle-wizard">
+							<div class="step">
+								<h2 class="section_title">Apply For Position</h2>
+								<h3 class="main_question">Personal info</h3>
+								<div class="form-group add_top_30">
+									<label for="firstname">First Name</label>
+									<input type="text" name="firstname" id="firstname" class="form-control required"
+										onchange="getVals(this, 'firstname_field');">
+								</div>
+								<div class="form-group">
+									<label for="lastname">Last Name</label>
+									<input type="text" name="lastname" id="lastname" class="form-control required"
+										onchange="getVals(this, 'lastname_field');">
+								</div>
+								<div class="form-group">
+									<label for="email">Email Address</label>
+									<input type="email" name="email" id="email" class="form-control required"
+										onchange="getVals(this, 'email_field');">
+								</div>
+								<div class="form-group">
+									<label for="phone">Phone</label>
+									<input type="text" name="phone" id="phone" class="form-control required">
+								</div>
+								<div class="form-group">
+									<legend>Country:</legend>
+									<div class="country">
+										<label for="macedonia">Macedonia</label>
+										<input type="radio" name="country" value="macedonia" id="country-1" class="form-control required">
+									
+										<label for="serbia">Serbia</label>
+										<input type="radio" name="country" value="serbia" id="country-2" class="form-control required">
+
+										<label for="other">Other</label>
+										<input type="radio" name="country" value="other" id="country-3" class="form-control required">
+									</div>
+									
+								</div>
+
+								<!-- <div class="form-group">
+									<h4>Job Position</h4>
+	                                <label for="phone">Part-time Trainer for Microsoft official courses:</label>
+									<select name="position" id="position" class="form-control">
+										<option value="" selected disabled>Select from the options below</option>
+										<option value="Azure Administrator">Azure Administrator</option>
+										<option value="Azure DevOps">Azure DevOps</option>
+										<option value="Azure Security">Azure Security</option>
+										<option value="Azure Data Analyst">Azure Data Analyst</option>
+										<option value="Azure Data Scientist">Azure Data Scientist</option>
+										<option value="Azure Database Administrator">Azure Database Administrator</option>
+										<option value="Azure Data Engineer">Azure Data Engineer </option>
+										<option value="Microsoft 365 Enterprise Administrator">Microsoft 365 Enterprise Administrator</option>
+										<option value="Microsoft 365 Messaging">Microsoft 365 Messaging</option>
+										<option value="Microsoft 365 Security">Microsoft 365 Security </option>
+										<option value="Power Platform">Power Platform</option>
+										<option value="Microsoft Dynamics CRM">Microsoft Dynamics CRM</option>
+									</select>
+	                                
+	                            </div> -->
+
+
+
+								<div class="form-group">
+									<h4>Job Position</h4>
+									<label for="phone">Select from the options below:</label>
+									<select name="position" id="position" class="form-control">
+
+										<!-- <option class="bigger-option"><b>Part-time Trainer for
+												Microsoft official
+												courses</b></option> -->
+												
+
+										<optgroup label="">
+											<option value="Recruiter">Recruiter</option>
+
+											<option value="Career Specialist">Career Specialist</option>
+
+											<option value="HR Specialist">HR Specialist</option>
+
+											<option value="Marketing Director">Marketing Director</option>
+							
+											<option value="Director of Semos Academies">Director of Semos Academies</option>
+
+										</optgroup>
+
+										<optgroup label="Part-time Trainer for:">
+											<option value="Python">Python</option>
+											<option value="JavaScript">JavaScript</option>
+											<option value="ISTQB">ISTQB</option>
+											<option value="Angular ">Angular </option>
+										</optgroup>
+			
+										<!-- <optgroup label="">
+											<option value="Sales Specialist">Sales Specialist</option>
+											<option value="Digital Marketing Specialist">Digital Marketing Specialist</option>
+										</optgroup> -->
+										<optgroup label="Part-time Trainer for
+										Microsoft official
+										courses">
+											<option selected disabled hidden style='display: none' value=''></option>
+											<option value="Azure Administrator">Azure Administrator</option>
+											<option value="Azure DevOps">Azure DevOps</option>
+											<option value="Azure Security">Azure Security</option>
+											<option value="Azure Data Analyst">Azure Data Analyst</option>
+											<option value="Azure Data Scientist">Azure Data Scientist</option>
+											<option value="Azure Database Administrator">Azure Database Administrator
+											</option>
+											<option value="Azure Data Engineer">Azure Data Engineer </option>
+											<option value="Developing solutions for Microsoft Azure">Developing solutions for Microsoft Azure</option>
+											<option value="Microsoft 365 Enterprise Administrator">Microsoft 365
+												Enterprise
+												Administrator</option>
+											<option value="Microsoft 365 Messaging">Microsoft 365 Messaging</option>
+											<option value="Microsoft 365 Security">Microsoft 365 Security </option>
+											<option value="Power Platform">Power Platform</option>
+											<option value="Microsoft Dynamics CRM">Microsoft Dynamics CRM</option>
+										</optgroup>
+										
+										<!-- <option class="bigger-option" value="" disabled><b>Part-time Trainer for Unity
+												official courses</b></option> -->
+										
+										<optgroup label="Part-time Trainer for Unity
+										official courses">
+											<option value="Unity developer - designer">Unity developer - designer</option>
+											<option value="Unity developer – programmer">Unity developer – programmer</option>
+										</optgroup>
+
+										<!-- <option class="bigger-option" value="" disabled><b>Part-time Trainer</b>
+										</option> -->
+										<!-- <optgroup label="Part-time Trainer for AWS official training">
+											<option value="">AWS official training</option>
+										</optgroup> -->
+
+										<optgroup label="Part-time Trainer for AWS official courses">
+											
+											<option value="AWS">AWS</option>
+										</optgroup>
+
+										
+										
+									</select>
+
+								</div>
+
+								<div class="form-group add_bottom_30 add_top_20">
+									<label>Attach Resume<br><small>(File accepted:<strong>.pdf, .doc/docx</strong> - Max
+											file size: 2MB limit)</small></label>
+									<div class="fileupload">
+										<input type="file" name="fileupload"
+											accept=".pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+											class="required">
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label>Do you have a question in mind?</label>
+									<input type="text" name="message" id="message" class="form-control">
+								</div>
+							</div>
+							<!-- /step-->
+
+							<div class="submit step" id="end">
+								<div class="summary">
+									<div class="wrapper">
+										<h3>Thank you for your time<br><span id="name_field"></span>!</h3>
+										<p>We will contact you shortly at the following email address: <strong
+												id="email_field"></strong></p>
+									</div>
+									<div class="text-center">
+										<div class="form-group terms">
+											<label class="container_check">Please accept our <a href="#"
+													data-toggle="modal" data-target="#terms-txt">Terms and
+													conditions</a> before Submit
+												<input type="checkbox" name="terms" value="Yes" class="required">
+												<span class="checkmark"></span>
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /step last-->
+
+						</div>
+						<!-- /middle-wizard -->
+						<div id="bottom-wizard">
+							<button type="button" name="backward" class="backward">Prev</button>
+							<button type="button" name="forward" class="forward">Next</button>
+							<button type="submit" name="process" class="submit">Submit</button>
+						</div>
+						<!-- /bottom-wizard -->
+					</form>
+				</div>
+				<!-- /Wizard container -->
+			</div>
+			<!-- /content-right-->
+		</div>
+		<!-- /row-->
+	</div>
+	<!-- /container-fluid -->
+
+	<div class="cd-overlay-nav">
+		<span></span>
+	</div>
+	<!-- /cd-overlay-nav -->
+
+	<div class="cd-overlay-content">
+		<span></span>
+	</div>
+	<!-- /cd-overlay-content -->
+
+	<!-- <a href="#0" class="cd-nav-trigger">Menu<span class="cd-icon"></span></a> -->
+	<!-- /menu button -->
+
+	<!-- Modal terms -->
+	<div class="modal fade" id="terms-txt" tabindex="-1" role="dialog" aria-labelledby="termsLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title" id="termsLabel">Terms and conditions</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				</div>
+				<div class="modal-body">
+					We process this data for recruitment purposes only. We are storing this data in our Applicant
+					Tracking System, and we will not share it with anyone else.
+					We would like to keep this data until our open role is filled. [We can not estimate the exact time
+					period, but we will consider this period over when a candidate accepts our job offer for the
+					position for which we are considering you.]
+
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn_1" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+			<!-- /.modal-content -->
+		</div>
+		<!-- /.modal-dialog -->
+	</div>
+	<!-- /.modal -->
+
+	<!-- COMMON SCRIPTS -->
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/common_scripts.min.js"></script>
+	<script src="js/velocity.min.js"></script>
+	<script src="js/common_functions.js"></script>
+	<script src="js/file-validator.js"></script>
+
+	<!-- Wizard script-->
+	<script src="js/func_4.js"></script>
+	<!-- <script src="js/func_1.js"></script> -->
+
+
+</body>
+
+</html>
