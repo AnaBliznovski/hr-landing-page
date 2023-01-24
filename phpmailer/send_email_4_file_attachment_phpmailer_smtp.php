@@ -154,7 +154,7 @@
              </div>
             <h4><span>Job application successfully sent!</span></h4>
             <br>
-            <p>Our team will review your application and will be in touch if your qualifications match our needs for the role. If you are not selected for this position, we will keep your resume in our corporate database for future suitable opportunities matching your profile.</p>
+     
             <small>You will be redirected back in 15 seconds.</small>
         </div>';
     } catch (Exception $e) {
