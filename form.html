@@ -167,14 +167,14 @@
 								<div class="form-group">
 									<h4>Job Position</h4>
 									<label for="phone">Select from the options below:</label>
-									<select name="position" id="position" class="form-control">
+									<select name="position" id="position" class="form-control" onchange="getVals(this, 'position_field');">
 
 										<!-- <option class="bigger-option"><b>Part-time Trainer for
 												Microsoft official
 												courses</b></option> -->
 												
 
-										<optgroup label="">
+										<optgroup label="" >
 											
 											<option value="Sales Specialist">Sales Specialist</option>
 
@@ -269,9 +269,12 @@
 							<div class="submit step" id="end">
 								<div class="summary">
 									<div class="wrapper">
-										<h3>Thank you for your time<br><span id="name_field"></span>!</h3>
+										<h3>Dear <span id="firstname_field"></span>!</h3>
+										<p>Thank you so much for your interest in the open job position at Semos Education and for taking the time to apply for our <strong id="position_field"></strong> position.</p>
+										<br>
 										<p>We will contact you shortly at the following email address: <strong
-												id="email_field"></strong></p>
+											id="email_field"></strong></p>
+
 									</div>
 									<div class="text-center">
 										<div class="form-group terms">
@@ -327,12 +330,12 @@
 					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 				</div>
 				<div class="modal-body">
-					We process this data for recruitment purposes only. We are storing this data in our Applicant
-					Tracking System, and we will not share it with anyone else.
-					We would like to keep this data until our open role is filled. [We can not estimate the exact time
-					period, but we will consider this period over when a candidate accepts our job offer for the
-					position for which we are considering you.]
-
+					By submitting your application, you agree and understand that Semos Education will not use your data for any purpose
+					other than the recruitment aim and the same will be store in our Applicant tracking system.
+					<br><br>
+					Our company takes the security of your personal data seriously. It has internal policies and controls in place to ensure
+					that your data is not lost, accidentally destroyed, misused or disclosed, and is not accessed except by our employees in
+					the proper performance of their duties.
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn_1" data-dismiss="modal">Close</button>

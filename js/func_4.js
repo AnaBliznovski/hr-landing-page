@@ -66,10 +66,10 @@ $("form#wrapped")
 function getVals(formControl, controlType) {
     switch (controlType) {
 
-        case 'name_field':
+        case 'firstname_field':
             // Get the value for input
             var value = $(formControl).val();
-            $("#name_field").text(value);
+            $("#firstname_field").text(value);
             break;
 
         case 'email_field':
@@ -77,5 +77,12 @@ function getVals(formControl, controlType) {
             var value = $(formControl).val();
             $("#email_field").text(value);
             break;
+
+        case 'position_field':
+            // Get the value for input
+            var value = $(formControl).val();
+            $("#position_field").text(value);
+            break;
+        
     }
 }
