@@ -1,6 +1,12 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
+/*check what couses scroll*/
+/* * {
+  outline: 1px solid red;
+} */
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #79b4db;
@@ -798,6 +804,7 @@ section {
 /*--------------------------------------------------------------
 # Values
 --------------------------------------------------------------*/
+
 .positions .icon-box {
   margin-bottom: 20px;
   padding: 30px;
@@ -966,11 +973,24 @@ section {
   opacity: 1;
 }
 
+.responsive-video {
+  width: 100%;
+  height: 21.5vw;
+}
+
+@media(max-width: 576px) {
+  .responsive-video {
+      width: 100%;
+      height: 50vw;
+  }
+}
+
 /*--------------------------------------------------------------
 # Gallery Details
 --------------------------------------------------------------*/
 .portfolio-details {
   padding-top: 40px;
+  color: black;
 }
 
 .portfolio-details .portfolio-details-slider img {
@@ -1035,6 +1055,126 @@ section {
 # Hiring 
 --------------------------------------------------------------*/
 
+.category .job {
+  height: fit-content;
+
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  color: black;
+}
+
+.category .job:hover {
+  border: 1px solid #0d6efd;
+}
+
+.category .job span {
+  padding: 6px 20px;
+  font-weight: 400;
+  display: inline-block;
+}
+
+.category .job .colors1,
+.category .job .colors2,
+.category .job .colors3,
+.category .job .colors4
+.category .job .colors5 {
+  font-weight: 800;
+  color: white;
+}
+
+.category .job .colors1 {
+  background: #79b4db;
+}
+
+.category .job .colors2 {
+  background: rgba(36, 110, 208, 0.26);
+}
+
+.category .job .colors3 {
+  background: rgba(36, 110, 208, 0.26);
+}
+
+.category .job .colors4 {
+  background: rgba(36, 110, 208, 0.26);
+}
+
+.category .job .colors5 {
+  background: rgba(36, 110, 208, 0.26);
+}
+
+.place {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  padding-left: 0px;
+}
+
+.place li {
+  list-style-type: none;
+}
+.left {
+  font-weight: 800;
+}
+
+.category .job span.time {
+  font-weight: 900;
+}
+
+.job-img {
+  width: 100%;
+  height: auto;
+}
+
+.apply-btn {
+  background: #0774bb;
+  color: #fff;
+  padding: 8px 25px;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 14px;
+  font-weight: 600;
+  display: inline-block;
+  width: fit-content;
+}
+
+.apply-btn:hover {
+  background: #1f1f1f;
+  color: #fff;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.jp_job_des h3{
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: relative;
+  border-bottom: 0;
+}
+
+.jp_job_des h3:before {
+  content: '';
+  border: 1px solid #23c0e9;
+  width: 8px;
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+}
+
+.jp_job_des h3:after {
+  content: '';
+  border: 1px solid #23c0e9;
+  width: 30px;
+  position: absolute;
+  bottom: -15px;
+  left: 11px;
+}
+
 .hiring .icon-box {
   padding: 30px;
   position: relative;
@@ -1090,7 +1230,7 @@ section {
 
 .testimonials .testimonial-item .testimonial-img {
   width: 90px;
-  height: 100px;
+  height: auto;
   border-radius: 50%;
   border: 6px solid #fff;
   float: left;
